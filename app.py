@@ -50,6 +50,8 @@ app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_USERNAME', '')
 
 mail = Mail(app)
 
+db.bind(provider='mysql', host='localhost', user='root', passwd='rauf', db='db_sobathitung')
+'''
 # --- Database (PyMySQL) ---
 db.bind(
     provider='mysql',
@@ -58,6 +60,7 @@ db.bind(
     passwd=os.getenv('DB_PASSWORD', ''),
     db=os.getenv('DB_NAME', 'db_sobathitung')
 )
+'''
 db.generate_mapping(create_tables=True)
 
 
