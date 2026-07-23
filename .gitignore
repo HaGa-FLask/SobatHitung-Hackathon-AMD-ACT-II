@@ -1,0 +1,7 @@
+# Ignore all __pycache__ directories and their contents recursively
+__pycache__/
+
+# Optionally, ignore any compiled Python bytecode files globally
+*.pyc
+*.pyo
+*.pyd
